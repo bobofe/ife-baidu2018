@@ -1,14 +1,29 @@
-## 给菜单添加样式
-###遇到的问题
-1、层叠样式，样式失效问题
+## 任务一：给菜单添加样式
+### 思路一：transition + 添加/移除class
 
-2、使用border-bottom颜色消失，但是长度不变，说明使用border-bottom不合适
+问题：点击一下，下面的线不会自己消失，需要通过toggle来控制线的消失和重现
 
-3、点击之后，样式不消失
+见task1-增加额外元素+transtion.html
 
-4、使用动画库
+### 思路二：transition + animation +  添加/移除class
 
+点击一下，可以实现线的自动消失和重现
 
+### 遇到的问题
+
+1、层叠样式，样式失效问题？
+
+2、使用border-bottom颜色消失，但是长度不变，说明使用border-bottom不合适？
+
+3、如何操作class？
+
+4、批量操作css？
+
+5、线如果用伪类，无法居中变化
+
+6、使用animation时，单次点击有效，双次点击无效（先添加后移除一个属性的操作）？
+
+7、使用动画库
 
 ### 解决方法
 
@@ -26,13 +41,13 @@
 }
 ```
 
-2、在menu下面增加一个元素，设置width，通过width设置样式
+2、在menu下面增加一个元素或添加一个伪元素，设置width，通过width设置样式
 
 问题：设置transition的时候，长度是从一边增大的，不是从中间增大
 
 解决：给设置width的元素加一个margin: 0 auto;这样样式就从中间开始增大
 
-3.点击切换添加和移除样式
+3、点击切换添加和移除样式
 
 `element.classList`
 
@@ -44,9 +59,26 @@
 
 + **toggle** ( String [, force] )：当只有一个参数时切换 class value; 即如果类存在，则删除它并返回`false`，如果不存在，则添加它并返回`true`。当存在第二个参数时：如果第二个参数的计算结果为true，则添加指定的类值，如果计算结果为false，则删除它
 
-+ **contains**( String )
-
-检查元素的类属性中是否存在指定的类值。
++ **contains**( String )：检查元素的类属性中是否存在指定的类值。
 
 + replace( oldClass, newClass )：用一个新类替换已有类。
+
+4、通过**element.style.cssText**批量操作css
+
+5、暂时无解
+
+6、先添加后，设置定时器移除
+
+7、css动画库
+
++ Animate.css：<https://daneden.github.io/animate.css/>
+
+  简单动画库，操作元素一个元素进/出的动画
+
++ 
+
+
+
+
+
 

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>菜单动画效果</title>
     <style>
         div.test{
             width: 70px;
@@ -11,17 +10,21 @@
         .menu{
             width: 70px;
             text-align: center;
+            position: relative;
         }
-        .trans{
+        .menu::after{
+            content: '';
             width: 0;
             height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
             transition: width 2s linear;
             background: red;
-            margin: 0 auto;
         }
-        .trans.active{
+        .menu.active::after{
             width: 70px;
-
+            color: red;
         }
         button{
             margin-top: 10px;
@@ -31,16 +34,13 @@
 <body>
 <div class="test">
     <div class="menu">前端学院</div>
-    <div class="trans"></div>
     <button id="btn">点我切换</button>
 </div>
 <script>
     var btn = document.getElementById("btn");
     btn.addEventListener('click',function () {
-        var underline = document.getElementsByClassName("trans")[0];
-        //如果有active属性移除，如果没有加上
+        var underline = document.querySelector(".menu");
         underline.classList.toggle('active');
-
     },false)
 </script>
 </body>

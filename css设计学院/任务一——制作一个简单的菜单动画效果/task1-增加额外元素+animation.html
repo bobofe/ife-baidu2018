@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div.test{
+            width: 70px;
+            margin: 10px auto;
+        }
+        .menu{
+            width: 70px;
+            text-align: center;
+        }
+        .trans{
+            width: 0;
+            height: 2px;
+            background: red;
+            margin: 0 auto;
+
+        }
+        @keyframes mx{
+            50%{
+                width: 70px;
+                color: red;
+            }
+        }
+        .trans.active{
+            animation: mx 2s cubic-bezier(0,0,1,1);
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="test">
+    <div class="menu">前端学院</div>
+    <div class="trans"></div>
+    <button id="btn">点我切换</button>
+</div>
+<script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener('click',function () {
+
+        var underline = document.getElementsByClassName("trans")[0];
+
+        underline.classList.add('active');
+        setTimeout(function () {
+            underline.classList.remove('active');
+        },2000)
+
+    },false)
+</script>
+</body>
+</html>
