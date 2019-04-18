@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单动画效果</title>
+    <style>
+        div.test{
+            width: 70px;
+            margin: 10px auto;
+        }
+        .menu{
+            width: 70px;
+            text-align: center;
+        }
+        .trans{
+            width: 0;
+            height: 2px;
+            transition: width 2s linear;
+            background: red;
+            margin: 0 auto;
+        }
+        .trans.active{
+            width: 70px;
+
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="test">
+    <div class="menu">前端学院</div>
+    <div class="trans"></div>
+    <button id="btn">点我切换</button>
+</div>
+<script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener('click',function () {
+        var underline = document.getElementsByClassName("trans")[0];
+        //如果有active属性移除，如果没有加上
+        underline.classList.toggle('active');
+
+    },false)
+</script>
+</body>
+</html>
