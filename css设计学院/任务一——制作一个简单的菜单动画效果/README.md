@@ -71,13 +71,55 @@
 
 7、css动画库
 
-+ Animate.css：<https://daneden.github.io/animate.css/>
+Animate.css：
 
-  简单动画库，操作元素一个元素进/出的动画
++ <https://daneden.github.io/animate.css/>
 
-+ 
++ 简单动画库，操作一个元素进/出的动画
 
+Animejs：
 
++ [https://animejs.com](https://animejs.com/)、<https://github.com/juliangarnier/anime/>
+
++ Anime.js（/æn.ə.meɪ/）是一个轻量级JavaScript动画库，具有简单但功能强大的API。它适用于CSS属性，SVG，DOM属性和JavaScript对象。
+
+Hover.css：
+
+- CSS hover 悬停效果，可以应用于链接、按钮、图片等等。
+- [github.com/IanLunn/Hov…](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2FIanLunn%2FHover)
+
+wow.js:
+
+- 滚动展示动画
+- WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果。
+- [github.com/matthieua/W…](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fmatthieua%2FWOW)
+
+scrollReveal.js：
+
+- 类似 wow.js
+- [github.com/jlmakes/scr…](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fjlmakes%2Fscrollreveal)
+
+Magic.css：
+
+- css3 animation动画库
+- [github.com/miniMAC/mag…](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2FminiMAC%2Fmagic)
+
+Waves：
+
+- 点击波纹效果
+- [github.com/fians/Waves](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Ffians%2FWaves)
+
+move.js：
+
+- 一个小型的JavaScript库，通过JS来控制一系列的CSS动画顺序执行，使CSS3动画变得非常简单和优雅。
+- [github.com/visionmedia…](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fvisionmedia%2Fmove.js)
+
+Velocity.js：
+
+- 一个功能齐全的 JavaScript 动画套件，包括诸如淡入淡出、滚动、滚动、停止、结束、翻转等动画效果。
+- [github.com/julianshapi…](https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fjulianshapiro%2Fvelocity)
+
+## 
 
 
 
